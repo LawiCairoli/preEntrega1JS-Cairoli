@@ -27,7 +27,7 @@ precios();
 while(ciudad != "ESC"){
     switch(ciudad){
         case "La Plata":
-            alert(nombre + ", nuestro gimnasio mas cerca esta en calle 50 n°1326");
+           alert(nombre + ", nuestro gimnasio mas cerca esta en calle 50 n°1326");
             break;
         case "Quilmes":
             alert(nombre + ", nuestro gimnasio mas cerca esta en Av. H. Yrigoyen n°526");
