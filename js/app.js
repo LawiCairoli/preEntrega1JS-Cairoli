@@ -1,9 +1,11 @@
+// Solicitud de información
 alert("Bienvenido a DC gimnasios");
 let nombre = prompt("Ingrese su nombre por favor:");
 let ciudad = prompt("Ingrese la ciudad donde quiere asistir a nuestros gimnasios");
 let dias = Number(prompt("Hola " + nombre + ", ingresa cantidad de días (1-6 días) que asistiras al gimnasio:"));
-let precio = 10000;
+let precio = 10000; // Declaración de precio mensual mínimo
 
+//Funcion para aportar el precio teniendo en cuenta la cantidad de dias
 function precios(){
     if(dias >= 7){
         alert(nombre + " la cantidad de días ingresado es erroneo, por favor ingresá un número entre 1 y 6. Muchas gracias");
@@ -21,6 +23,7 @@ function precios(){
 }
 precios();
 
+//Ciclo para aportar las direcciones cercanas
 while(ciudad != "ESC"){
     switch(ciudad){
         case "La Plata":
