@@ -24,7 +24,7 @@ function precios(){
 precios();
 
 //Ciclo para aportar las direcciones cercanas
-while(ciudad != "ESC"){
+//while(ciudad != "ESC"){
     switch(ciudad){
         case "La Plata":
            alert(nombre + ", nuestro gimnasio mas cerca esta en calle 50 n°1326");

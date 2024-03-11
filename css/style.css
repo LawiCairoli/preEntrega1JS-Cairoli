@@ -1,10 +1,19 @@
 body{
     header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 2%;
+        margin-bottom: 5%;
         img{
             width: 10%;
             border-left: 5%;
             border-radius: 50%;
         }
+        nav{
+            margin-right: 10%;
+        }
+
     }
     
 }
