@@ -27,7 +27,6 @@ precios();
 function mostrarSucursales(sucursales){
     sucursales.forEach(sucursal => {
         alert(nombre + ', nuestro gimnasio mas cercano en ' + sucursal.localidad + ' esta en ' + sucursal.domicilio + ' y el telefono es ' + sucursal.telefono)
-        //(sucursal.localidad + ' - ' + sucursal.domicilio + ' - ' + sucursal.telefono)
     });
 }
 
@@ -43,7 +42,7 @@ function filtrarSucursal(){
     if(resultado.length>0){
         mostrarSucursales(resultado)
     }else{
-        console.error('no existe la localidad')
+        alert(nombre + ", aun no tenemos sucursales cerca de tu casa.");
     }
 }
 
@@ -57,7 +56,7 @@ filtrarLocalidad(ciudad);
 // while(ciudad != "ESC"){
 //     switch(ciudad){
 //         case "LA PLATA":
-//            alert(nombre + ", nuestro gimnasio mas cerca esta en " sucursal.localidad + 'esta en ' + sucursal.domicilio + ' y el telefono es ' + sucursal.telefono);
+//            alert(nombre + ", nuestro gimnasio mas cerca esta en calle 50 n°1326);
 //             break;
 //         case "QUILMES":
 //             alert(nombre + ", nuestro gimnasio mas cerca esta en Av. H. Yrigoyen n°526");

@@ -28,5 +28,5 @@ let sucursales = [
 
 ]
 for (const sucursal of sucursales){
-    console.log(sucursal)
+    document.write('/ '+sucursal.localidad +' '+sucursal.domicilio+' ')
 }
