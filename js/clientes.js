@@ -8,5 +8,5 @@ class Cliente{
     }
     
 }
-const cliente = new Cliente("Juan", "Marsiola", 39, 35896557, "Jm39_ola");
+const cliente = new Cliente("Pedro Enrique", "Marsiola", 39, 35896557, "PEm39_ola");
 console.log("Gracias por registrarte " + cliente.nombres +' '+ cliente.apellido)
