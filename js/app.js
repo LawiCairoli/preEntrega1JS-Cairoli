@@ -1,5 +1,5 @@
 // Solicitud de dias con el nombre en frase
-let consultas = document.getElementById('consulta');
+//let consultas = document.getElementById('consulta');
 consultas.addEventListener('click', dias);
 
 
