@@ -1,5 +1,5 @@
 // Solicitud de dias con el nombre en frase
-//let consultas = document.getElementById('consulta');
+let consultas = document.getElementById('consulta');
 consultas.addEventListener('click', dias);
 
 
@@ -46,7 +46,7 @@ function quitarCiudad(){
 }
 
 let precio = 10000; // Declaración de precio mensual mínimo
-let dias1 = document.getElementById('cita').value; 
+let dias1 = document.getElementById('cita').value;  // declaracion de cantidad de dias
 
 //Funcion para aportar el precio teniendo en cuenta la cantidad de dias
 function precios(){
