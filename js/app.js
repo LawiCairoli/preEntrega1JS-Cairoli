@@ -1,5 +1,4 @@
 // Solicitud de dias con el nombre en frase
- // definimos el nombre del usuario
 let consultas = document.getElementById('consulta');
 consultas.addEventListener('click', dias);
 
