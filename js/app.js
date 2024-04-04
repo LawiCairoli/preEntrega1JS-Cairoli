@@ -12,15 +12,16 @@ function dias(){
     const nombre = document.getElementById('name').value;
     let dia = document.createElement('div')
     dia.setAttribute("id", "segundaParte")
-    dia.innerHTML = nombre + ", "+ '<label for="dias">ingrese la cantidad de dias que asistirá </label> <input type="text" id="dias"> <button type="button" id= "dia" >Aceptar</button>'
+    dia.innerHTML = nombre + ", "+ '<label for="dias">ingrese la cantidad de dias que asistirá </label> <input type="text" id="day"> <button type="button" id= "dia" >Aceptar</button>'
     document.body.appendChild(dia)
 
     quitarNombre()
+    const cantidadDias = document.querySelector('#dia');
+    cantidadDias.addEventListener('click', ciudad);
 }
 
+
 // solicitud de ciudad y respuesta
-const cantidadDias = document.querySelector('#dia');
-cantidadDias.addEventListener('click', ciudad);
 
 function quitarDias(){
     let segundaConsulta = document.querySelector('#segundaParte')
@@ -28,30 +29,35 @@ function quitarDias(){
 }
 
 function ciudad(){
+    const dias1 = document.getElementById('day').value;
     let lugar = document.createElement('div')
     lugar.setAttribute("id", "terceraParte")
     lugar.innerHTML = '<label for="city">Ingrese la ciudad </label> <input type="text" id="city"> <button type="button" id="cita" >Aceptar</button>'
 
     
-    document.appendChild(lugar)
-     quitarDias()
+    document.body.appendChild(lugar)
+    quitarDias()
+
+    const gimnasio = document.querySelector('#cita')
+    gimnasio.addEventListener('click', precios)
 }
 
-const gimnasio = document.querySelector('#cita')
-gimnasio.addEventListener('click', precios)
 
 function quitarCiudad(){
-    let segundaConsulta = document.querySelector('#segundaParte')
-    segundaConsulta.remove();
+    let terceraConsulta = document.querySelector('#terceraParte')
+    terceraConsulta.remove();
 }
 
-let precio = 10000; // Declaración de precio mensual mínimo
-let dias1 = document.getElementById('cita').value;  // declaracion de cantidad de dias
 
 //Funcion para aportar el precio teniendo en cuenta la cantidad de dias
-function precios(){
+let precio = 10000; // Declaración de precio mensual mínimo
+
+function precios(nombre, dias1){
     if(dias1 >= 7){
-        alert(nombre + " la cantidad de días ingresado es erroneo, por favor ingresá un número entre 1 y 6. Muchas gracias");
+        let err = document.createElement('h2')
+        err.setAttribute("class", "cuartaParte")
+        err.innerHTML = nombre + ' la cantidad de días ingresado es erroneo, por favor ingresá un número entre 1 y 6. Muchas gracias'
+        //alert(nombre + " la cantidad de días ingresado es erroneo, por favor ingresá un número entre 1 y 6. Muchas gracias");
     }else if((dias1 <= 6) && (dias1 > 4)){
         let mensualidad = precio * 1.5;
         alert(nombre + ", tu mensualidad será de $" + mensualidad );
@@ -61,11 +67,14 @@ function precios(){
     }else if((dias1 <= 2)&&(dias1 >=1)){
         alert(nombre + ", tu mensualidad será de $" + precio );
 }else{
-    alert(nombre + " la cantidad de días ingresado es erroneo, por favor ingresá un número entre 1 y 6. Muchas gracias");
+    let err = document.createElement('h2')
+        err.setAttribute("class", "cuartaParte")
+        err.innerHTML = nombre + ' la cantidad de días ingresado es erroneo, por favor ingresá un número entre 1 y 6. Muchas gracias'
+    //alert(nombre + " la cantidad de días ingresado es erroneo, por favor ingresá un número entre 1 y 6. Muchas gracias");
 }
 quitarCiudad()
 }
-precios();
+precios(nombre, parseInt(dias1));
 
 // // funciones vinculadas a la busqueda de sucursales
 
