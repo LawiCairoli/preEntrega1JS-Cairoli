@@ -80,3 +80,6 @@ document.addEventListener('DOMContentLoaded', ()=> {
 })
 
 
+for (const sucursal of sucursales){
+    console.log('/ '+sucursal.localidad +' '+sucursal.domicilio+' ')
+}

@@ -4,57 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DC gimnasios</title>
-    <link rel="shortcut icon" href="../assets/images/foto-DClogo.png" type="image/x-icon"> <!--link logo-->
-    <link rel="stylesheet" href="../css/style.css"> <!--link css-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> <!--link boostrap-->
+    <link rel="shortcut icon" href="../assets/images/foto-DClogo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css">
     <script src="../js/contacto.js" defer></script>
     <script src="../js/clientes.js" defer></script>
     <script src="../js/sucursales.js" defer></script>
     <script src="../js/app.js" defer></script>
 </head>
-<body>
-    <header>
-        <img src="../assets/images/foto-DClogo.png" alt="logo del gimnasio">  
-        <h1>DC Gimnasios</h1>
-        <nav class="navbar navbar-expand-lg .bg-transparente ">
-            <div class="container-fluid " >
-              <!-- <a class="navbar-brand " href="#" ></a> -->
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNavAltMarkup" >
-                <div class="navbar-nav">
-                  <a class="nav-link active " aria-current="page" href="../index.html" >Home</a>
-                  <a class="nav-link" href="clases.html">Clases</a>
-                  <a class="nav-link" href="contacto.html">Contacto</a>
-                 <!--  <a class="nav-link disabled" aria-disabled="true">Disabled</a> -->
-                </div>
-              </div>
-            </div>
-          </nav>
-    </header>
+<body class="body-form">
+  <header>
+    <img id="logo" src="../assets/images/foto-DClogo.png" alt="logo del gimnasio">  
 
+    <h1 class="">DC Gimnasios</h1>
+      
+    <nav class="nav">
+      <a class="nav-link" href="../index.html">Home</a>
+      <a class="nav-link" href="../pages/clases.html">Clases</a>
+      <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+        
+    </nav>
+
+  </header>
+  <main>
     <div id="logueo">
-        <a href="http://">
-          Ingresar
-        </a>
-        <a href="nuevoUsuario.html">
-          Nuevo Usuario
-        </a>
-      </div>
-
-      <form id="formulario" method="POST">
-          <label for="">Dejanos tu cometario!</label>
-          <br>
-          <textarea name="mensaje" id="comentario"></textarea>
-          <button type="submit">Enviar</button>
-      </form>
-      <hr>
-
-      <div id="content"></div>
-  
-      <h2>Comentarios de los clientes</h2>
-      <ul id="usrComent"></ul>
+      <a id="ingreso" href="../pages/nuevoUsuario.html" >
+        Ingresar
+      </a>
+      <a id="logueo-nuevo" href="../pages/nuevoUsuario.html">
+        Nuevo Usuario
+      </a>
+    </div>
+  <div class="container">
+    <h2 id="name-form">Formulario de Consulta</h2>
+    <form>
+        <label for="nombre">Nombre:</label>
+        <input class="entrada" type="text" id="nombre" name="nombre" required><br><br>
+        
+        <label for="apellido">Apellido:</label>
+        <input class="entrada" type="text" id="apellido" name="apellido" required><br><br>
+        
+        <label for="email">Correo electrónico:</label>
+        <input class="entrada" type="email" id="email" name="email" required><br><br>
+        
+        <label for="telefono">Teléfono:</label>
+        <input class="entrada" type="tel" id="telefono" name="telefono"><br><br>
+        
+        <label for="comentario">Comentario:</label><br>
+        <textarea id="comentario" name="comentario" rows="4" maxlength="400" required></textarea><br><br>
+        
+        <input class="entrada" id="enviar" type="submit" value="Enviar Consulta">
+    </form>
+  </div>
 
 </body>
 </html>

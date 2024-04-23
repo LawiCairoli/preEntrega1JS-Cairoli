@@ -1,57 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Almendra:ital@0;1&family=Imbue:opsz,wght@10..100,100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul {
+    list-style-type: none;
+}
+
 body{
-    header{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-top: 2%;
-        background-color: #1F3969;
-        img{
-            width: 10%;
-            border-left: 5%;
-            border-radius: 50%;
-        }
-        nav{
-            margin-right: 10%;
-            font-size: 2.25rem;
-        }
-        h1{
-            color: whitesmoke;
-            font-size: 550%;
+    min-height: 100vh;
+    background-color: #1F3969;
+}
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1F3969;
+    max-width: 1200px;
+    padding: 2rem;
+    margin: 0 auto;
+}
 
-        }
+#logo{
+    width: 15%;
+    border-left: 5%;
+    border-radius: 50%;
+}
+h1{
+    color: whitesmoke;
+    font-size: 550%;
+    font-family: 'Almendra', 'Times New Roman', Times, serif;
+}
 
-    }
-   
+.nav-link{
+    margin: 0rem 1.2rem ;
+    color: whitesmoke;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+.nav-link:hover{
+    font-size: 1.7rem;
+    color: #f0823f;
+    box-shadow: 0 0 1rem whitesmoke;
+}
+
+main{
+  max-width: 1200px;
+  margin: 0 auto;
 }
 #logueo {
     display: flex;
-    justify-content: end;
+    justify-content: start;
     align-items: center;
     flex-wrap: wrap;
-    margin-right: 10%;
 }
 #logueo a{
     text-decoration: none;
     margin-right: 1%;
     color: #1f3969;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 #logueo a:hover{
     font-size: 1.25rem;
+    color: #f0823f;
+}
+#primeraParte h1{
+    margin-left: 25%;
+    align-content: center;
+    font-family: 'Almendra', 'Times New Roman', Times, serif;
+    color: whitesmoke;
+    font-size: 3.5rem;
+}
+strong{
+    color: #f0823f;
+}
+#primeraParte p{
+    text-align: justify;
+    font-size: 1.2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #1F3969;
+    color: whitesmoke;
+    padding: 1%;
 }
 
-form {
-    
-    margin-left: 20%;
-    margin-bottom: 20%;
-  }
-  form ul li input {
+.form-inicio{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+    margin-top: 1%;
+    color: whitesmoke;
+}
+
+.body-form{
+    font-family: Verdana, sans-serif;
+    background-color: #1F3969;
+    color: whitesmoke;
+}
+.container {
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f0823f;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+#name-form {
+    text-align: center;
+}
+
+.container form{
+    display: flex;
+    flex-direction: column;
+}
+
+.container label {
+    font-weight: bold;
+}
+
+.entrada{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
     border-radius: 5px;
-  }
-  form ul li button {
+}
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
     border-radius: 5px;
-  }
-  form ul li button:hover {
-    background: rgb(4, 9, 250);
-    background: radial-gradient(circle, rgb(4, 9, 250) 0%, rgb(254, 254, 254) 90%);
-    width: 5rem;
-  }
+}
+
+#enviar{
+    width: 50%;
+    margin: 0 auto;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1F3969;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+#enviar:hover {
+    background-color: #2E5D9D;
+}
