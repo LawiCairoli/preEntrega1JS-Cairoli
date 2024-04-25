@@ -6,9 +6,6 @@
     <title>DC gimnasios</title>
     <link rel="shortcut icon" href="../assets/images/foto-DClogo.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/style.css">
-    <script src="../js/contacto.js" defer></script>
-    <script src="../js/clientes.js" defer></script>
-    <script src="../js/sucursales.js" defer></script>
     <script src="../js/app.js" defer></script>
 </head>
 <body class="body-form">
@@ -26,17 +23,17 @@
 
   </header>
   <main>
-    <div id="logueo">
-      <a id="ingreso" href="../pages/nuevoUsuario.html" >
+    <div id="entrar">
+      <a href="../pages/usuario.html" >
         Ingresar
       </a>
-      <a id="logueo-nuevo" href="../pages/nuevoUsuario.html">
+      <a href="../pages/usuario.html">
         Nuevo Usuario
       </a>
     </div>
   <div class="container">
     <h2 id="name-form">Formulario de Consulta</h2>
-    <form>
+    <form action="http://127.0.0.1:5500/index.html" method="post">
         <label for="nombre">Nombre:</label>
         <input class="entrada" type="text" id="nombre" name="nombre" required><br><br>
         

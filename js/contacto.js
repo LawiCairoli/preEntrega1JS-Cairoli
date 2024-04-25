@@ -8,7 +8,7 @@ function mostrarError(msj){
     mensajeError.textContent = msj
     mensajeError.classList.add('error')
     const modal = document.querySelector('#content')
-    modal.appendChild(mensajeError);
+    modal.append(mensajeError);
 
     setTimeout(()=>{
         mensajeError.remove();

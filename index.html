@@ -7,9 +7,7 @@
       <title>DC gimnasios</title>
       <link rel="shortcut icon" href="assets/images/foto-DClogo.png" type="image/x-icon">
       <link rel="stylesheet" href="css/style.css"> 
-      <script src="js/contacto.js" defer></script>
-      <script src="js/clientes.js" defer></script>
-      <script src="js/sucursales.js" defer></script>
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11" defer></script>
       <script src="js/app.js" defer></script>
 </head>
   <body>
@@ -27,11 +25,11 @@
 
       </header>
       <main>
-        <div id="logueo">
-          <a id="ingreso" href="pages/nuevoUsuario.html" >
+        <div  id="entrar">
+          <a href="../pages/usuario.html" >
             Ingresar
           </a>
-          <a id="logueo-nuevo" href="pages/nuevoUsuario.html">
+          <a href="../pages/usuario.html">
             Nuevo Usuario
           </a>
         </div>
@@ -52,26 +50,23 @@
           </p>
           <div class="container">
             <form action="">
-            <ul class="form-inicio">
-              <li>
-                <label for="name">Por favor ingresá tu nombre</label> <br> <br>
-                <input class="entrada" type="text" id="name">
-              </li>
-              <li>
-                <label for="city">Decinos la localidad donde queres entrenar</label><br> <br>
-                <input class="entrada" type="text" id="city">
-              </li>
-              <li>
-                <label for="day">La cantidad de días que vas a entrenar</label><br> <br>
-                <input class="entrada" type="text" id="day">
-              </li>
-              <li>
-                <button type="button" id="enviar" > Averigua </button>
-              </li>
-            </ul>
-          </form>
+              <ul class="form-inicio">
+                <li>
+                  <label for="name">Por favor ingresá tu nombre</label> <br> <br>
+                  <input class="entrada" type="text" id="name">
+                </li>
+                <li>
+                  <label for="day">La cantidad de días que vas a entrenar</label><br> <br>
+                  <input class="entrada" type="text" id="day">
+                </li>
+                <li>
+                  <button type="button" id="enviar" > Averigua </button>
+                </li>
+              </ul>
+            </form>
+          </div>
+          <div class="segunda-parte"></div>
         </div>
-      </div>
-    </main>
-</body>
+      </main>
+  </body>
 </html>

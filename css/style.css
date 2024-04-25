@@ -50,19 +50,19 @@ main{
   max-width: 1200px;
   margin: 0 auto;
 }
-#logueo {
+#entrar {
     display: flex;
     justify-content: start;
     align-items: center;
     flex-wrap: wrap;
 }
-#logueo a{
+#entrar a{
     text-decoration: none;
     margin-right: 1%;
-    color: #1f3969;
+    color: whitesmoke;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-#logueo a:hover{
+#entrar a:hover{
     font-size: 1.25rem;
     color: #f0823f;
 }
@@ -147,4 +147,84 @@ textarea {
 
 #enviar:hover {
     background-color: #2E5D9D;
+}
+
+.descripcion-gimnasio {
+    background-color: #f0823f;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    text-align: justify;
+    color: whitesmoke;
+    font-size: 1.2rem
+}
+
+.descripcion-gimnasio h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-family: 'Almendra', 'Times New Roman', Times, serif;
+}
+
+.descripcion-gimnasio p {
+    margin-bottom: 15px;
+}
+.descripcion-gimnasio strong {
+    color: #1F3969;
+    font-weight: bold;
+}
+
+#usuario {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.botones-centrales {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.boton {
+    padding: 15px 30px;
+    margin: 10px;
+    background-color: #1F3969;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.boton:hover {
+    background-color: #2E5D9D;
+}
+
+.boton-largo {
+    padding: 20px 40px; 
+    font-size: 20px; 
+}
+.listaLocal{
+    margin-top: 5px;
+}
+.lista-detalles {
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f0823f;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.lista-detalles li {
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.5rem;
+    color: whitesmoke;
+
 }
